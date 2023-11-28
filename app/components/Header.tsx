@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import dropBoxLogo from "@/public/dropbox-logo.png";
 import { SignInButton, SignedOut, UserButton } from "@clerk/nextjs";
+import ModeToggler from "@/app/components/ModeToggler";
 
 function Header() {
   return (
@@ -14,7 +15,7 @@ function Header() {
       </Link>
 
       <div className="px-5 flex space-x-2 items-center">
-        {/* Color mode */}
+        <ModeToggler />
         <UserButton afterSignOutUrl="/" />
 
         <SignedOut>
