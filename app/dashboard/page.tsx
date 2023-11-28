@@ -1,9 +1,14 @@
-"use client";
-
 import { auth } from "@clerk/nextjs";
+import Dropzone from "../components/Dropzone";
 
-function page() {
-  return <div>Dashboard</div>;
+function Dashboard() {
+  const { userId } = auth();
+
+  return (
+    <div>
+      <Dropzone />
+    </div>
+  );
 }
 
-export default page;
+export default Dashboard;
