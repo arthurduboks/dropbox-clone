@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
+import TrustBadge from "./components/TrustBadge";
 
 export default function Home() {
   return (
@@ -15,9 +16,9 @@ export default function Home() {
             Built with Next js 14
           </h1>
 
-          <Link href="/dashboard" className="flex bg-blue-500 p-5 w-fit">
+          <Link href="/dashboard" className="flex bg-blue-500 p-5 w-fit group">
             Try it for free!
-            <ArrowRight className="ml-10" />
+            <ArrowRight className="ml-10 transform translate-x-0 group-hover:translate-x-2" />
           </Link>
         </div>
         {/* Video */}
@@ -30,6 +31,7 @@ export default function Home() {
           </video>
         </div>
       </div>
+      <TrustBadge />
       {/* Disclaimer */}
       <p className="text-center font-bold text-xl pt-5">Disclaimer</p>
       <p className="text-center font-light p-2">

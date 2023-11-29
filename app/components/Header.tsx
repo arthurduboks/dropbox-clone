@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import dropBoxLogo from "@/public/dropbox-logo.png";
+import dropBoxLogo from "@/public/dropbox-logo.svg";
 import { SignInButton, SignedOut, UserButton } from "@clerk/nextjs";
 import ModeToggler from "@/app/components/ModeToggler";
 
