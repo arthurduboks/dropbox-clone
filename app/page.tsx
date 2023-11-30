@@ -10,7 +10,7 @@ export default function Home() {
       dark:bg-slate-800"
       >
         <div className="p-10 flex flex-col bg-[#2B2929] dark:bg-slate-800 text-white space-y-5">
-          <h1 className="text-5xl font-bold">
+          <h1 className="text-6xl font-bold">
             Welcome to DropBox Clone. <br />
             <br />
             Built with Next js 14
